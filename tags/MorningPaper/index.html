@@ -1,5 +1,5 @@
 
- <!DOCTYPE HTML>
+  <!DOCTYPE HTML>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
@@ -14,7 +14,7 @@
     <meta name="description" content="技术博客+生活日志">
 <meta property="og:type" content="website">
 <meta property="og:title" content="A Coding Fish">
-<meta property="og:url" content="/index.html">
+<meta property="og:url" content="/tags/MorningPaper/index.html">
 <meta property="og:site_name" content="A Coding Fish">
 <meta property="og:description" content="技术博客+生活日志">
 <meta name="twitter:card" content="summary">
@@ -34,9 +34,9 @@
     <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 
-  <body>
-    <header>
-      <div>
+    <body>
+      <header>
+        <div>
 		
 			<div id="imglogo">
 				<a href="/"><img src="/img/logo.png" alt="A Coding Fish" title="A Coding Fish"/></a>
@@ -70,202 +70,36 @@
 				</ul>
 			</nav>			
 </div>
-    </header>
-    <div id="container">
-      <div id="main">
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/03/19/MP-Morning-Pater-CRDT/" title="[MP]Morning Pater CRDT" itemprop="url">[MP]Morning Pater CRDT</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Jixi Shan" target="_blank" itemprop="author">Jixi Shan</a>
-		
-  <p class="article-time">
-    <time datetime="2015-03-19T02:47:09.000Z" itemprop="datePublished"> 发表于 2015-03-19</time>
-    
-  </p>
-</header>
-    <div class="article-content">
+      </header>
+      <div id="container">
         
-        <h2 id="There_are_two_approaches_to_replication">There are two approaches to replication</h2><h3 id="CRDT">CRDT</h3><ul>
-<li>Conflict-free replicated Data Type;   </li>
-<li>Commutative Replicated Data Types   </li>
-<li>Convergent Replicated Data Types   <h3 id="Operations_at_primary">Operations at primary</h3></li>
-</ul>
-<ol>
-<li>Date type:<blockquote>
-<p>Convergent Replicated Data Types.</p>
-<h3 id="Replicate_the_result">Replicate the result</h3></blockquote>
-</li>
-<li>Date type: <blockquote>
-<p>Commutative Replicated Data Types.</p>
-</blockquote>
-</li>
-</ol>
-<h3 id="简单累加时钟模型">简单累加时钟模型</h3><p>两个计数器 每个计数器要么增长要么保持不变，对于两个时钟的一系列操作，最终一致是Max(每个步骤）并将Max的结果求和</p>
-<h3 id="两个时钟模型">两个时钟模型</h3><ol>
-<li>两个时钟一个加一个减</li>
-<li>需要全局的时钟来计算所有可以减的值（当前的净资产）【依赖于同步】</li>
-</ol>
-<h3 id="如何实现CRDT">如何实现CRDT</h3><p>1：LastWriter-Win   </p>
-<pre><code><span class="built_in">merge</span>函数就是取时间戳的最大值
-</code></pre><p>2： 多值寄存器   </p>
-<pre><code><span class="built_in">merge</span>就是依赖于一个版本控制向量，取得最大的向量的数就是最终结果
-</code></pre><p>3：Grow Set<br>4: 2P-Set</p>
-<pre><code>两步骤操作，一个操作中可以被增加和减少，但是第二步中智能减少
-</code></pre><p>5：A Last-Writer-Wins element Set</p>
-<pre><code>keeps an<span class="instruction"> add-set </span>and a remove-set, with timestamped entries
-</code></pre><p>6：A 2P2P-Graph</p>
-<pre><code>which is <span class="operator">the</span> combination <span class="operator">of</span> <span class="constant">two</span> <span class="number">2</span>P-Sets <span class="keyword">for</span> vertices <span class="operator">and</span> edges
-</code></pre><p>7：An add-only monotonic DAG.<br>8：An add-and-remove partial order data type<br>    A couple of data types supporting collaborative text editing</p>
 
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-  <div class="article-tags">
+<div class="archive-title" >
+  <h2 class="tag-icon">MorningPaper</h2>
   
-  <span></span> <a href="/tags/MorningPaper/">MorningPaper</a>
+</div>
+<div id="main" class="archive-part clearfix">
+  <div id="archive-page">
+
+  <section class="post" itemscope itemprop="blogPost">
+  
+    <a href="/2015/03/19/MP-Morning-Pater-CRDT/" title="[MP]Morning Pater CRDT" itemprop="url">
+  
+
+    <time datetime="2015-03-19T02:47:09.000Z" itemprop="datePublished">2015-03-19</time>
+
+
+    <h1 itemprop="name">[MP]Morning Pater CRDT</h1>
+
+  </a>
+</section>
+
+
   </div>
-
 </div>
 
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/03/19/MP-Morning-Pater-CRDT/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/03/19/MP-Morning-Pater-CRDT/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand happy" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/03/13/HappyPost/" title="第一篇个人日志，以后每周一篇特此记录" itemprop="url">第一篇个人日志，以后每周一篇特此记录</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Jixi Shan" target="_blank" itemprop="author">Jixi Shan</a>
-		
-  <p class="article-time">
-    <time datetime="2015-03-13T08:00:15.000Z" itemprop="datePublished"> 发表于 2015-03-13</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>今天是个特殊的日子，Google Code 关闭，推荐迁移到Github</p>
-<h2 id="O(∩_∩)O">O(∩_∩)O</h2>
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/03/13/HappyPost/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/03/13/HappyPost/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-
-</div>
-      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
-
-<div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
-<aside class="clearfix">
-
-  
-
-  
-<div class="tagslist">
-	<p class="asidetitle">标签</p>
-		<ul class="clearfix">
-		
-			<li><a href="/tags/MorningPaper/" title="MorningPaper">MorningPaper<sup>1</sup></a></li>
-		
-		</ul>
-</div>
-
-
-  <div class="linkslist">
-  <p class="asidetitle">友情链接</p>
-    <ul>
-        
-          <li>
-            
-            	<a href="http://coolshell.cn/" target="_blank" title="左耳朵耗子">左耳朵耗子</a>
-            
-          </li>
-        
-          <li>
-            
-            	<a href="http://wuchong.me" target="_blank" title="JackMan">JackMan</a>
-            
-          </li>
-        
-    </ul>
-</div>
-
-  
-
-
-  <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
-</div>
-
-</aside>
-</div>
-    </div>
-    <footer><div id="footer" >
+      </div>
+      <footer><div id="footer" >
 	
 	<div class="line">
 		<span></span>
@@ -303,7 +137,7 @@
 		</p>
 </div>
 </footer>
-    <script src="/js/jquery-2.0.3.min.js"></script>
+      <script src="/js/jquery-2.0.3.min.js"></script>
 <script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 
@@ -418,5 +252,5 @@ var disqus_shortname = 'Fish Shan## e.g. wuchong   your disqus short name.';
 
 <!-- MathJax End -->
 
-  </body>
- </html>
+    </body>
+   </html>
